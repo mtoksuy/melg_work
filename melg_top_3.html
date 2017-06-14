@@ -120,7 +120,6 @@
 				</div>
 			</header>
 
-			fffff
 			<!-- bottom_header -->
 			<div class="bottom_header">
 				<ol class="bottom_header_contents clearfix">
@@ -195,17 +194,14 @@
 }
 
 /* The container <div> - needed to position the dropdown content */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
+
 
 /* Dropdown Content (Hidden by Default) */
 .drop_down_content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
+    min-width: 70px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -213,7 +209,7 @@
 /* Links inside the dropdown */
 .drop_down_content a {
     color: black;
-    padding: 12px 16px;
+    padding: 5px 5px;
     text-decoration: none;
     display: block;
 }
@@ -225,24 +221,38 @@
 .show {display:block;}
 
 
+/*CSS for picture comment */
+
+.picture_comment input, .picture_comment textarea {
+	border: none;
+	padding: 8px 10px;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
+	outline: 0;
+}
+
+.picture_comment textarea {
+	width: 450px;
+	background-color: #fffcf5 ;
+	position: relative;
+	left: -10px;
+	top: 4px;
+}
+
+.line-separator{
+
+height:0.2px;
+
+background:#DFD0AB;
+
+border-bottom:0.05px solid #DFD0AB;
+
+}
+
 </style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 			<!-- main -->
 			<div class="main clearfix">
@@ -279,10 +289,6 @@
 							<div class="tl_inner_contents">
 								<ul>
 
-
-
-
-
 									<li>
 										<div class="tl_inner_content" tl_primary_id-data="58">
 											<div class="tl_inner_content_inner">
@@ -301,6 +307,10 @@
 												</div>
 												<!-- tl_inner_content_inner_bottom_data -->
 												<div class="tl_inner_content_inner_bottom_data">
+													<div class ="action_data">
+														<span class="typcn typcn-heart-outline"></span>
+													</div>
+
 													<div class="tl_inner_content_inner_bottom_data_text">
 														<pre>かあさん煮定食！</pre>
 													</div>
@@ -309,6 +319,7 @@
 															<div class="tl_inner_content_inner_bottom_data_time">15分前 </div>
 														</a>
 													</div>
+											<!-- dropdown button for edit and delete -->
 													<div class="drop_down">
 														<div class="drop_down_button">
 															▽
@@ -316,13 +327,23 @@
 														<div class="drop_down_content">
 															<a href="#"> Edit</a>
 															<a href="#"> Delete</a>
+															<div class = "cancel_drop_down">
+																<a href="#"> Cancel </a>
+															</div>
 														</div>
 													</div>
+
+													<div class="line-separator"></div>
+
+											<!-- picture comment here-->
+													<div class="picture_comment">
+														<textarea aria-label="Add a comment..." placeholder= "Add a comment..." style ="height: 18px;"></textarea> 
+													</div>
+
 												</div>
 												<!-- tl_inner_content_inner_bottom_data -->
 
-<!-- I think that you should make it around here :	 dropdown button-->
-												
+										
 
 
 											</div>
@@ -379,36 +400,28 @@ var count    = console.count;
 p('sdfs');
 p($('.tl'));
 
-		$('.tl_inner_content').on( {
-			'click': function() {
-				alert('afa');
-				p('テスト');
-		/*
-				$('.drop_down_content').css( {
-					'display' : 'block',
-				});
-		*/
-			} 
-		}, '.drop_down');
+$('.tl_inner_content').on( {
+	'click': function() {				
+		$('.drop_down_content').css( {
+			'display' : 'block',
+		});	
+	} 
+}, '.drop_down_button');
 
-/*
-<div class="drop_down">
-	<div class="drop_down_button">
-		▽
-	</div>
-	<div class="drop_down_content">
-		<a href="#"> Edit</a>
-		<a href="#"> Delete</a>
-	</div>
-</div>
-*/
+/*try to hide after click on the other  */
+$('.cancel_drop_down').click(function(){
+	$(".drop_down_content").hide(); 
+});
 
-
-
-
-
-
-
+//////////////////////////////////////
+//テキストを打った時にtextareaを広げる
+//////////////////////////////////////
+$('.picture_comment').on( {
+	'keypress' : function() {
+	$('.picture_comment textarea').autosize();
+//			message_send_form_height = $('.message_send_form').height();
+	}
+}, 'textarea');
 
 </script>
 
