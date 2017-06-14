@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>メルグ</title>
+		<!-- meta -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<!-- Twitter -->
+		<meta name="twitter:card" content="photo">
+		<!-- カードの種類 -->
+		<meta name="twitter:site" content="@melg_jp">
+		<!-- サイトのtwitterアカウント -->
+		<meta name="twitter:creator" content="@melg_jp">
+		<!-- 制作者ないし投稿者 -->
+		<meta name="twitter:url" content="http://melg.me/">
+		<!-- コンテンツのURL -->
+		<meta name="twitter:title" content="メルグ">
+		<!-- コンテンツのタイトル(70文字以内) -->
+		<meta name="twitter:description" content="">
+		<!-- コンテンツの概要(200文字以内) -->
+		<!--
+		<meta name="twitter:image" content="http://melg.me/assets/img/ogp/twitter/twitter_ogp_1.png"> <!-- サムネイル 600px x 315px -->
+		<!-- ogp -->
+		<meta property="og:site_name" content="メルグ">
+		<!-- サイト名 -->
+		<meta property="og:url" content="http://melg.me/">
+		<!-- コンテンツのURL -->
+		<meta property="og:title" content="メルグ">
+		<!-- 記事タイトル -->
+		<meta property="og:type" content="article">
+		<!-- タイプ -->
+		<!--
+		<meta property="og:image" content="http://melg.me/assets/img/ogp/facebook/facebook_ogp_1.png"> <!-- サムネイル 1200px x 630px -->
+		<meta property="og:description" content="">
+		<!-- コンテンツの概要 -->
+		<meta property="fb:admins" content="100000094156949">
+		<!-- facebookユーザーID -->
+		<!-- icon -->
+		<link rel="shortcut icon" href="http://melg.me/assets/img/favicon/melg_favicon_1.ico" type="image/vnd.microsoft.icon">
+		<!-- css -->
+		<link rel="stylesheet" href="http://melg.me/assets/css/common/common.css" type="text/css">
+		<link rel="stylesheet" href="http://melg.me/assets/css/tl/common.css" type="text/css">
+		<!-- cssライブラリ -->
+		<link rel="stylesheet" href="http://melg.me/assets/css/library/typicons.2.0.7/font/typicons.css" type="text/css">
+		<link rel="stylesheet" href="http://melg.me/assets/css/library/flickity.1.1.1/flickity.css" type="text/css" media="screen">
+		<link rel="stylesheet" href="http://melg.me/assets/js/library/pickadate.js-3.5.6/lib/themes/default.css">
+		<link rel="stylesheet" href="http://melg.me/assets/js/library/pickadate.js-3.5.6/lib/themes/default.date.css">
+		<link rel="stylesheet" href="http://melg.me/assets/css/library/hamburgers.css">
+		<link rel="stylesheet" href="http://melg.me/assets/js/library/drawer-master/dist/css/drawer.css" type="text/css">
+		<link rel="stylesheet" href="http://melg.me/assets/js/library/sweetalert-master/dist/sweetalert.css" type="text/css">
+		<link rel="stylesheet" href="http://melg.me/assets/js/library/slick-1.5.9/slick/slick.css" type="text/css">
+		<link rel="stylesheet" href="http://melg.me/assets/js/library/Ladda-master/dist/ladda.min.css" type="text/css">
+		<!-- スマホicon -->
+		<link rel="apple-touch-icon" href="http://melg.me/assets/img/favicon/melg_favicon_1.png" />
+		<link rel="apple-touch-icon-precomposed" href="http://melg.me/assets/img/favicon/melg_favicon_1.png" />
+	</head>
+	<body class="drawer drawer--right">
+		<!-- wrapper -->
+		<div id="wrapper">
+			<!-- drawer -->
+			<!-- ドロワー -->
+			<nav class="drawer-nav" role="navigation">
+				<ul class="drawer-menu">
+					<li>
+						<span class="drawer-brand">メニュー</span>
+					</li>
+					<li>
+						<span class="drawer_sub_menu_title">アカウント</span>
+					</li>
+					<li>
+						<a class="drawer-menu-item" href="http://melg.me/user/setup/">ユーザー設定</a>
+					</li>
+					<li>
+						<a class="drawer-menu-item" href="http://melg.me/logout/">ログアウト</a>
+					</li>
+					<li>
+						<span class="drawer_sub_menu_title">Select lang</span>
+					</li>
+					<li>
+						<a class="drawer-menu-item" href="http://melg.me/en/">Switch to English</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- header -->
+			<!-- header -->
+			<header id="header" class="clearfix">
+				<div class="header_contents clearfix">
+					<!-- logo -->
+					<div class="logo">
+						<h1>
+							<a href="http://melg.me/" class="o_8">
+								<img width="146" height="50" title="メルグ" alt="メルグ" src="http://melg.me//assets/img/logo/melg_logo_4.png">
+							</a>
+						</h1>
+					</div>
+					<!-- menu -->
+					<div class="menu clearfix">
+						<ul class="menu_content">
+							<!-- hamburger -->
+							<li class="menu_content_block">
+								<button type="button" class="drawer-toggle drawer-hamburger">
+									<span class="sr-only">toggle navigation</span>
+									<span class="drawer-hamburger-icon"></span>
+								</button>
+							</li>
+							<li class="menu_content_block ">
+								<!-- アカウント関連 -->
+								<div class="melg_account">
+									<a href="http://melg.me/user/2/" class="clearfix">
+										<div class="melg_account_icon">
+											<img width="30" height="30" src="http://melg.me/assets/img/user/icon/2_126857657.png">
+										</div>
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</header>
+			<!-- bottom_header -->
+			<div class="bottom_header">
+				<ol class="bottom_header_contents clearfix">
+					<li class="bottom_header_li on">
+						<a href="http://melg.me/">
+							<span class="typcn typcn-business-card"></span>
+							<span class="bottom_header_text">探す</span>
+						</a>
+					</li>
+					<li class="bottom_header_li ">
+						<a href="http://melg.me/listen/">
+							<span class="typcn typcn-clipboard"></span>
+							<span class="bottom_header_text">マイリスト</span>
+						</a>
+					</li>
+					<li class="bottom_header_li ">
+						<a href="http://melg.me/message/">
+							<span class="typcn typcn-messages"></span>
+							<span class="bottom_header_text">メッセージ</span>
+						</a>
+					</li>
+					<li class="bottom_header_li">
+						<a class="bottom_header_notice">
+							<span class="typcn typcn-bell"></span>
+							<span class="bottom_header_text">お知らせ</span>
+						</a>
+					</li>
+					<li class="bottom_header_li ">
+						<a href="http://melg.me/other/">
+							<span class="typcn typcn-th-menu"></span>
+							<span class="bottom_header_text">その他</span>
+						</a>
+					</li>
+				</ol>
+			</div>
+			<!-- first_view -->
+
+
+
+
+<!-- Tran work start  -->
+
+<style>
+.tl .tl_inner .tl_inner_contents ul li .tl_inner_content .tl_inner_content_inner {
+    position: relative;
+}
+
+
+
+/* Dropdown Button */
+.drop_down {
+
+    background-color: #7F6113;
+    color: white;
+    padding: 1px;
+    font-size: 16px;
+    border: 0.5px solid black;
+    cursor: pointer;
+    
+    position: absolute;
+    right: 0;
+    top: 0;
+
+}
+
+
+
+
+/* Dropdown button on hover & focus */
+.drop_down:hover, .drop_down:focus {
+    background-color: #3e8e41;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.drop_down_content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.drop_down_content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.drop_down_content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<!-- main -->
+			<div class="main clearfix">
+				<!-- main_contents -->
+				<div class="main_contents clearfix">
+					<div class="tl">
+						<div class="tl_inner">
+							<div class="tl_inner_submit">
+								<form method="post" action="" class="tl_inner_submit_form">
+									<div class="tl_inner_submit_inner">
+										<div class="tl_inner_submit_inner_icon">
+											<img src="http://melg.me/assets/img/user/icon/2_126857657.png" width="30" height="30">
+										</div>
+										<div class="tl_inner_submit_inner_comment">
+											<textarea placeholder="美味しいお店見つかりましたか？" name="text_area" id="text_area"></textarea>
+										</div>
+										<div class="tl_inner_submit_inner_image">
+											<div class="tl_inner_submit_inner_image_upload_button">
+												<input class="user_icon" name="user_icon" id="user_icon" type="file">
+												<div class="tl_inner_submit_inner_image_upload_button_wording">
+													<span class="typcn typcn-image-outline"></span>
+													<span>画像</span>
+												</div>
+											</div>
+										</div>
+										<!-- tl_inner_submit_inner_image -->
+										<div class="tl_inner_submit_inner_submit">投稿 </div>
+										<!-- tl_inner_submit_inner_submit -->
+									</div>
+									<!-- tl_inner_submit_inner -->
+								</form>
+							</div>
+							<!-- tl_inner_submit -->
+							<div class="tl_inner_contents">
+								<ul>
+
+
+
+
+
+									<li>
+										<div class="tl_inner_content" tl_primary_id-data="58">
+											<div class="tl_inner_content_inner">
+												<!-- tl_inner_content_inner_user_data -->
+												<div class="tl_inner_content_inner_user_data clearfix">
+													<a href="http://melg.me/user/2">
+														<div class="tl_inner_content_inner_user_data_icon">
+															<img src="http://melg.me/assets/img/user/icon/2_126857657.png" width="30" height="30">
+														</div>
+														<div class="tl_inner_content_inner_user_data_name">Souya </div>
+													</a>
+												</div>
+												<!-- tl_inner_content_inner_user_data -->
+												<div class="tl_inner_content_inner_image">
+													<img src="http://melg.me/assets/img/tl/square_640px/58.jpg" width="256" height="256">
+												</div>
+												<!-- tl_inner_content_inner_bottom_data -->
+												<div class="tl_inner_content_inner_bottom_data">
+													<div class="tl_inner_content_inner_bottom_data_text">
+														<pre>かあさん煮定食！</pre>
+													</div>
+													<div class="clearfix">
+														<a href="http://melg.me/posts/58">
+															<div class="tl_inner_content_inner_bottom_data_time">15分前 </div>
+														</a>
+													</div>
+													<div class="drop_down">
+														<div class="drop_down_button">
+															▽
+														</div>
+														<div class="drop_down_content">
+															<a href="#"> Edit</a>
+															<a href="#"> Delete</a>
+														</div>
+													</div>
+												</div>
+												<!-- tl_inner_content_inner_bottom_data -->
+
+<!-- I think that you should make it around here :	 dropdown button-->
+												
+
+
+											</div>
+											<!-- tl_inner_content_inner -->
+										</div>
+										<!-- tl_inner_content -->
+									</li>
+
+
+
+
+<!-- Tran work end  -->
+
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- sidebar -->
+				<div class="sidebar"></div>
+			</div>
+			<!-- footer -->
+			<!-- footer -->
+			<footer class="footer clear">
+				<!-- footer_contents -->
+				<div class="footer_contents">
+					<div class="footer_contents_last_block">&copy; 2017 Livebase, Inc. </div>
+				</div>
+				<!-- footer_contents -->
+			</footer>
+			<!-- footer -->
+			<style>
+.footer_contents {
+	min-height: 10px;
+}
+</style>
+			<!-- jQueryプラグイン -->
+			<script type="text/javascript" src="http://melg.me/assets/js/library/jquery-1.9.1-min.js"></script>
+
+
+
+<script>
+
+/*************************
+デバッグ変数コンストラクタ
+*************************/
+var p        = console.log;
+var print    = console.log;
+var var_dump = console.dir;
+var trace    = console.trace;
+var time     = console.time;
+var count    = console.count;
+
+p('sdfs');
+p($('.tl'));
+
+		$('.tl_inner_content').on( {
+			'click': function() {
+				alert('afa');
+				p('テスト');
+		/*
+				$('.drop_down_content').css( {
+					'display' : 'block',
+				});
+		*/
+			} 
+		}, '.drop_down');
+
+/*
+<div class="drop_down">
+	<div class="drop_down_button">
+		▽
+	</div>
+	<div class="drop_down_content">
+		<a href="#"> Edit</a>
+		<a href="#"> Delete</a>
+	</div>
+</div>
+*/
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<!-- 基本プラグイン -->
+			<script type="text/javascript" src="http://melg.me/assets/js/common/common.js"></script>
+			<!-- 言語プラグイン -->
+			<script type="text/javascript" src="http://melg.me/assets/js/lang/common.js"></script>
+			<!-- TLプラグイン -->
+			<script type="text/javascript" src="http://melg.me/assets/js/tl/common.js"></script>
+			<!-- TLプラグイン -->
+			<script type="text/javascript" src="http://melg.me/assets/js/library/Ladda-master/dist/spin.min.js"></script>
+			<script type="text/javascript" src="http://melg.me/assets/js/library/Ladda-master/dist/ladda.min.js"></script>
+			<!-- pickadate.js-3.5.6プラグイン -->
+			<script type="text/javascript" src="http://melg.me/assets/js/library/pickadate.js-3.5.6/lib/picker.js"></script>
+			<script type="text/javascript" src="http://melg.me/assets/js/library/pickadate.js-3.5.6/lib/picker.date.js"></script>
+			<script type="text/javascript" src="http://melg.me/assets/js/library/pickadate.js-3.5.6/lib/picker.time.js"></script>
+			<script type="text/javascript" src="http://melg.me/assets/js/library/pickadate.js-3.5.6/lib/legacy.js"></script>
+			<script type="text/javascript" src="http://melg.me/assets/js/library/pickadate.js-3.5.6/lib/app.js"></script>
+			<!-- 日本語にする時はコメントを外す
+			<script type="text/javascript" src="http://melg.me/assets/js/library/pickadate.js-3.5.6/lib/translations/ja_JP.js"></script>
+-->
+			<!-- Drawer.jsプラグイン -->
+			<script src="http://melg.me/assets/js/library/iscroll_5.1.3.min.js"></script>
+			<script type="text/javascript" src="http://melg.me/assets/js/library/drawer-master/dist/js/drawer.js"></script>
+			<!-- sweetalert-devプラグイン -->
+			<script type="text/javascript" src="http://melg.me/assets/js/library/sweetalert-master/dist/sweetalert-dev.js"></script>
+			<!-- slickプラグイン -->
+			<script type="text/javascript" src="http://melg.me/assets/js/library/slick-1.5.9/slick/slick.js"></script>
+			<!-- slickプラグイン -->
+			<script type="text/javascript" src="http://melg.me/assets/js/library/slick-1.5.9/slick/app.js"></script>
+			<!-- autosizeプラグイン -->
+			<script type="text/javascript" src="http://melg.me/assets/js/library/jquery.autosize-min.js"></script>
+			<!-- 自作プラグイン -->
+			<script type="text/javascript" src="http://melg.me/assets/js/root/common.js"></script>
+			<script type="text/javascript" src="http://melg.me/assets/js/ajax/articleloader.js"></script>
+		</div>
+	</body>
+</html>
